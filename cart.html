@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Dress Shop | Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LUNA<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Your Shopping Cart</h1>
+</section>
+
+<section class="cart-section">
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span>₹<span id="cart-total">0</span></span>
+        </div>
+
+        <div class="summary-row">
+            <span>Shipping</span>
+            <span>Free</span>
+        </div>
+
+        <hr>
+
+        <div class="summary-row total">
+            <span>Total</span>
+            <span>₹<span id="final-total">0</span></span>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            PROCEED TO CHECKOUT
+        </button>
+    </div>
+
+</section>
+
+<footer>
+    <div class="copyright">
+        © 2026 Luna Dress Shop. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

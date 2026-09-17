@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Dress Shop | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LUNA<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you</p>
+</section>
+
+<section class="contact-section">
+
+    <div class="contact-info">
+        <h2>Get In Touch</h2>
+
+        <p>
+            Have a question about our dresses or your order?
+            Send us a message.
+        </p>
+
+        <div class="contact-box">
+            <h3>📍 Address</h3>
+            <p>Chennai, Tamil Nadu, India</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>📞 Phone</h3>
+            <p>+91 98765 43210</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>✉ Email</h3>
+            <p>hello@lunadress.com</p>
+        </div>
+    </div>
+
+    <form class="contact-form" onsubmit="sendMessage(event)">
+
+        <h2>Send Us a Message</h2>
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <input type="text" id="subject" placeholder="Subject" required>
+
+        <textarea id="message" rows="6"
+            placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn">SEND MESSAGE</button>
+
+        <p id="form-message"></p>
+
+    </form>
+
+</section>
+
+<footer>
+    <div class="copyright">
+        © 2026 Luna Dress Shop. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

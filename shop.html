@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Dress Shop | Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">LUNA<span>.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Our Collection</h1>
+    <p>Find the perfect dress for every occasion</p>
+</section>
+
+<section class="section">
+
+    <div class="filter-buttons">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('casual')">Casual</button>
+        <button onclick="filterProducts('party')">Party</button>
+        <button onclick="filterProducts('evening')">Evening</button>
+    </div>
+
+    <div class="products">
+
+        <div class="product-card shop-product" data-category="casual">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80">
+            <div class="product-info">
+                <h3>Floral Summer Dress</h3>
+                <p>₹1,899</p>
+                <button class="add-btn" onclick="addToCart('Floral Summer Dress',1899)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card shop-product" data-category="party">
+            <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=600&q=80">
+            <div class="product-info">
+                <h3>Elegant Party Dress</h3>
+                <p>₹2,499</p>
+                <button class="add-btn" onclick="addToCart('Elegant Party Dress',2499)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card shop-product" data-category="evening">
+            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80">
+            <div class="product-info">
+                <h3>Classic Evening Dress</h3>
+                <p>₹2,799</p>
+                <button class="add-btn" onclick="addToCart('Classic Evening Dress',2799)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card shop-product" data-category="casual">
+            <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=600&q=80">
+            <div class="product-info">
+                <h3>Pink Casual Dress</h3>
+                <p>₹1,699</p>
+                <button class="add-btn" onclick="addToCart('Pink Casual Dress',1699)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card shop-product" data-category="party">
+            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=600&q=80">
+            <div class="product-info">
+                <h3>Luxury Party Dress</h3>
+                <p>₹3,199</p>
+                <button class="add-btn" onclick="addToCart('Luxury Party Dress',3199)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card shop-product" data-category="evening">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=600&q=80">
+            <div class="product-info">
+                <h3>Black Evening Dress</h3>
+                <p>₹2,999</p>
+                <button class="add-btn" onclick="addToCart('Black Evening Dress',2999)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="copyright">
+        © 2026 Luna Dress Shop. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
